@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: black;
+  padding: 20px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  height: 220px; /* Ajuste a altura da logo */
+  width: auto;   /* Mantém a proporção da imagem */
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.welcome-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.info-section {
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.service {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 30%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.service img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.service .info {
+  position: absolute;
+  bottom: -100%; /* Inicialmente escondido abaixo do elemento */
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: bottom 0.3s ease;
+}
+
+.service:hover .info {
+  bottom: 0; /* Sobe a informação ao passar o mouse */
+}
+
+.service:hover img {
+  transform: scale(1.1);
+}
+
+.service button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.service button:hover {
+  background-color: #ddd;
+}
+
+footer {
+  text-align: center;
+  padding: 1px;
+  background-color: black;
+  color: #fff;
+  width: 100%;
+  bottom: 0;
+}

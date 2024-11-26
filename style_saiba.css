@@ -1,0 +1,152 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+  background-color: black;
+  padding: 20px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #bbb;
+}
+
+.logo img {
+  width: 270px;
+}
+
+.access-platform {
+  background-color: #333;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.access-platform:hover {
+  background-color: #555;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #020911, #b6d5f3);
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero-section h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.hero-section p {
+  font-size: 1.5em;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Centralização da seção */
+.mission-vision-values {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: center;
+  padding: 40px 20px;
+  flex: 1;
+}
+
+.card {
+  background-color: #000205;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: #22262b;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+.card p, .card ul {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 1px;
+  background-color: black;
+  color: #fff;
+  width: 100%;
+  bottom: 0;
+}

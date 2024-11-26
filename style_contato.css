@@ -1,0 +1,168 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #b0c4de, #d9e2ec, #f0f4f8);
+  color: #333;
+}
+
+header {
+  background-color: black;
+  padding: 20px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ddd;
+}
+
+.logo img {
+  width: 270px;
+}
+
+.access-platform {
+  background-color: #333;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.access-platform:hover {
+  background-color: #555;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo do wrapper de contato */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 40px;
+  margin-top: 0;
+}
+
+.contact-container {
+  max-width: 500px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-container p {
+  color: #666;
+  font-size: 1em;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Estilização do formulário */
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #b0c4de;
+  box-shadow: 0 0 5px rgba(176, 196, 222, 0.5);
+}
+
+/* Estilização do botão */
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #4a90e2, #357ABD);
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: linear-gradient(135deg, #357ABD, #2d6ca8);
+}
+
+/* Estilo da imagem */
+.image-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-content img {
+  width: 450px;
+  margin-left: 20px;
+  margin-top: 40px;
+  height: auto;
+  border-radius: 20%; /* Canto arredondado */
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-container,
+  .image-content {
+    width: 100%;
+    max-width: 500px;
+  }
+}

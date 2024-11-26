@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #f0f4f8, #b0c4de, #d9e2ec, #f0f4f8);
+  color: black;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Cabeçalho */
+header {
+  background-color: black;
+  padding: 20px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ddd;
+}
+
+.logo img {
+  width: 270px;
+}
+
+/* Estilização do botão "Acesse a plataforma" */
+.access-platform {
+  background-color: #333;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.access-platform:hover {
+  background-color: #555;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Seção principal com fundo gradiente */
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  max-width: 90%;
+  margin: 60px auto;
+  background: linear-gradient(145deg, #f0f4f8 0%, #d9e2ec 80%, #b0c4de 100%);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+.main-content:hover {
+  transform: scale(1.01);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilização do texto */
+.text-content {
+  max-width: 500px;
+  padding: 20px;
+}
+
+.text-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+  position: relative;
+}
+
+.text-content h1::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: #b0c4de;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  border-radius: 5px;
+}
+
+.text-content p {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Estilização do botão */
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #333, #555);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #555, #777);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Estilização da imagem */
+.image-content img {
+  width: 450px;
+  height: auto;
+  border-radius: 20%; /* Canto arredondado */
+  object-fit: cover;
+}
+
+/* Animação de flutuação */
+@keyframes float {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+/* Efeito de sombra na seção ao passar o mouse */
+.main-content:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
